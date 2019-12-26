@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CHPMUNC Website</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <!-- Half Page CONTENT --><!-- Half Page CONTENT --><!-- Half Page CONTENT --><!-- Half Page CONTENT -->
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+      height: 80%;
+    }
+  </style>
+  <!-- Half Page CONTENT --><!-- Half Page CONTENT --><!-- Half Page CONTENT --><!-- Half Page CONTENT -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    // The function actually applying the offset
+    function offsetAnchor() {
+      if (location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+      }
+    }
+
+    // Captures click events of all a elements with href starting with #
+    $(document).on('click', 'a[href^="#"]', function(event) {
+      // Click events are captured before hashchanges. Timeout
+      // causes offsetAnchor to be called after the page jump.
+      window.setTimeout(function() {
+        offsetAnchor();
+      }, 0);
+    });
+
+    // Set the offset when entering page with hash present in the url
+    window.setTimeout(offsetAnchor, 0);
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="">
+        <strong>CHPMUNC</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Committees</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chpmuncconference@gmail.com" class="nav-link" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="https://www.instagram.com/chpmunc/" class="nav-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/chhsmodelun" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="https://www.facebook.com/" class="nav-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li> -->
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT -->
+  <!-- Half Page Intro -->
+  <div class="view">
+    <video class="video-intro" poster="img/background.jpg" playsinline autoplay
+      muted loop>
+      <source src="img/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="text-center white-text mx-5 wow fadeIn">
+
+        <h1 class="mb-4">
+          <strong>Register for CHPMUNC II</strong>
+        </h1>
+
+        <a href="#forms" class="btn btn-outline-white btn-lg">
+          Go to Forms
+          <i class="fas fa-play ml-2"></i>
+        </a>
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Half Page Intro -->
+
+  <!--Main layout-->
+  <main class="pt-5">
+    <div class="container">
+      <!--Section: Cards-->
+      <section class="pt-5">
+        <!-- Heading & Description -->
+        <div class="wow fadeIn">
+          <!--Section heading-->
+          <h2 class="h1 text-center mb-5">Letter from the Director General</h2>
+          <!--Section description-->
+          <p class="text-left">Greetings Delegates!</p>
+          <p class="text-left">
+            In accordance with the Chapel Hill High School’s Model UN Club, 
+            we are proud to announce our second annual Chapel Hill Public 
+            Model UN Conference (CHPMUNC).</p>
+          <p class="text-left">
+            Like last year, this conference will provide opportunities for 
+            students in the Triangle area to learn about foreign affairs and 
+            global issues in a welcoming environment. The committees at 
+            CHPMUNC II --  two General Assemblies for those new to Model UN 
+            and a Joint Crisis Committee for those with a year or more of 
+            experience -- are designed to provide delegates with an experience 
+            similar to those they would have at a conference hosted by universities 
+            in North Carolina and Virginia. This conference allows delegates to 
+            gain experience with committees and to practice skills in a less stressful, 
+            but realistic environment.</p>
+          <p class="text-left">
+            We look forward to seeing a variety of delegates, whether 
+            they have years of experience, never competed in a conference, 
+            or only have experience with General Assemblies, from across the 
+            Triangle area and North Carolina for the second ever CHPMUNC. 
+            This years staff will be made up of mostly juniors and seniors 
+            from (CHHS, ECHHS, and CHS) and some CHHS alumni, who will guide, support, 
+            and challenge the delegates everyday so that they can reach their 
+            full potential over the course of the conference.</p>
+          <p class="text-left">
+            The conference will take place at the Carolina Center for 
+            Educational Excellence on the weekend of January 11-12.</p>
+          <p class="text-left">
+            We hope to see you all in CHPMUNC II!</p>
+          <p class="text-left">
+            Sincerely, 
+            <br>David Han 
+            <br>Director-General of CHPMUNC II
+          </p>
+        </div>
+        <!-- Heading & Description -->
+        
+        <hr class="my-5">
+
+        <!--Grid row-->
+        <div class="row mb-4 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img src="img/tiger.png" class="card-img-top"
+                  alt="" id="forms">
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">Chapel Hill High School</h4>
+                <!--Text-->
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed pellentesque eu magna non malesuada. Duis bibendum convallis fringilla. 
+                  Aenean odio turpis, porta nec quam vel, mattis elementum ex.</p>
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank"
+                  class="btn btn-primary btn-md">CHHS Registration Form 
+                  <i class="fas fa-play ml-2"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img src="img/echhslogo.png" class="card-img-top"
+                  alt="">
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">East Chapel Hill High School</h4>
+                <!--Text-->
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed pellentesque eu magna non malesuada. Duis bibendum convallis fringilla. 
+                  Aenean odio turpis, porta nec quam vel, mattis elementum ex.</p>
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank"
+                  class="btn btn-primary btn-md">ECHHS Registration Form
+                  <i class="fas fa-play ml-2"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row mb-4 wow fadeIn">
+
+           <!--Grid column-->
+           <div class="col-md-6 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img src="img/carrborohslogo.png" class="card-img-top"
+                  alt="">
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">Carrboro High School</h4>
+                <!--Text-->
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed pellentesque eu magna non malesuada. Duis bibendum convallis fringilla. 
+                  Aenean odio turpis, porta nec quam vel, mattis elementum ex.</p>
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank"
+                  class="btn btn-primary btn-md">CHS Registration Form 
+                  <i class="fas fa-play ml-2"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img src="img/ncssm.jpg" class="card-img-top"
+                  alt="">
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">North Carolina School of Science and Mathematics</h4>
+                <!--Text-->
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed pellentesque eu magna non malesuada. Duis bibendum convallis fringilla. 
+                  Aenean odio turpis, porta nec quam vel, mattis elementum ex.</p>
+                <!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK --><!-- FORM LINK -->
+                <a href="" target="_blank"
+                  class="btn btn-primary btn-md">NCSSM Registration Form
+                  <i class="fas fa-play ml-2"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+      </section>
+      <!--Section: Cards-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+  <!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT -->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a style="font-size:12px;" class="btn btn-outline-white" href="" role="button">Our Contacts
+        <i class="fas fa-mobile-alt"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <!-- <a href="https://www.facebook.com/" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/" target="_blank">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a> -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chpmuncconference@gmail.com" target="_blank">
+        <i class="far fa-envelope mr-3"></i>
+      </a>
+
+      <a href="https://www.instagram.com/chpmunc/" target="_blank">
+        <i class="fab fa-instagram mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/chhsmodelun" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2019 Copyright:
+      <a href="" target="_blank"> CHPMUNC </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
