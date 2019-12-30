@@ -1,6 +1,6 @@
 {
   "name": "chpmunc-website",
-  "version": "1.0",
+  "version": "0.3.0",
   "description": "Website for CPMUNC",
   "engines": {
     "node": "12.x"
