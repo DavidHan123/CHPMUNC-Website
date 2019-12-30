@@ -1,0 +1,8 @@
+{
+  "name": "CHPMUNC Website",
+  "description": "A Node.js app using Express 4",
+  "repository": "https://github.com/DavidHan123/CHPMUNC-Website/tree/Node.js",
+  "logo": "",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
