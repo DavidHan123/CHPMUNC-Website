@@ -1,4 +1,5 @@
 <!-- INCORPORATE <li class="nav-item active"> -->
+<!-- More Elabroate Footer -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -70,29 +71,6 @@
       }
     }
   </style>
-
-  <!-- JQuery -->
-  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript">
-    // The function actually applying the offset
-    function offsetAnchor() {
-      if (location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
-      }
-    }
-
-    // Captures click events of all a elements with href starting with #
-    $(document).on('click', 'a[href^="#"]', function(event) {
-      // Click events are captured before hashchanges. Timeout
-      // causes offsetAnchor to be called after the page jump.
-      window.setTimeout(function() {
-        offsetAnchor();
-      }, 0);
-    });
-
-    // Set the offset when entering page with hash present in the url
-    window.setTimeout(offsetAnchor, 0);
-  </script>
 </head>
 
 <body>
@@ -118,7 +96,6 @@
         <!-- Time Counter -->
         <p id="time-counter" class="border border-light my-4"></p>
 
-
         <h4 class="mb-4">
           <strong>The Second Annual Chapel Hill Public Model United Nations Conference</strong>
         </h4>
@@ -128,7 +105,6 @@
           <strong>Hosted and directed by the Chapel Hill High School's Model UN Club</strong>
         </h4>
 
-        <!-- Learn more /#about -->
         <a style="font-size:12px;" target="_blank" href="/about" class="btn btn-outline-white">Learn More
           <i class="fas fa-book-open"></i>        
         </a>
@@ -136,6 +112,7 @@
         <a style="font-size:12px;" target="_blank" href="/register" class="btn btn-outline-white">Register Now
           <i class="far fa-edit"></i>
         </a>
+        
       </div>
       <!-- Content -->
 
