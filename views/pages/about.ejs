@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/header.ejs %>
+
+  <!-- Custom styles -->
+  <link href="/css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+      height: 80%;
+    }
+  </style>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    // The function actually applying the offset
+    function offsetAnchor() {
+      if (location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+      }
+    }
+
+    // Captures click events of all a elements with href starting with #
+    $(document).on('click', 'a[href^="#"]', function(event) {
+      // Click events are captured before hashchanges. Timeout
+      // causes offsetAnchor to be called after the page jump.
+      window.setTimeout(function() {
+        offsetAnchor();
+      }, 0);
+    });
+
+    // Set the offset when entering page with hash present in the url
+    window.setTimeout(offsetAnchor, 0);
+  </script>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+
+  <!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT -->
+  <!-- Half Page Intro -->
+  <div class="view">
+    <video class="video-intro" poster="/img/background.jpg" playsinline autoplay
+      muted loop>
+      <source src="/img/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="text-center white-text mx-5 wow fadeIn">
+        <h1 class="mb-4">
+          <strong>Committees</strong>
+        </h1>
+        
+        <a href="#background-guides" class="btn btn-outline-white btn-lg">
+          Go to the Background Guides
+          <i class="fas fa-play ml-2"></i>
+        </a>
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Half Page Intro -->
+
+  <!--Main layout-->
+  <main>
+    <div class="container" id="about">
+
+      <!--Section -->
+      <section class="mt-5 wow fadeIn">
+
+        <h3 class="h3 text-center mb-5">About CHPMUNC</h3>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-info fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">What is CHPMUNC?</h5>
+                <p class="grey-text">CHPMUNC is a conference hosted by CHHS for local high schools. 
+                  It is staffed and funded by high schoolers from CHHS, ECHHS, and CHS
+                  </p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Where is CHPMUNC?</h5>
+                <p class="grey-text">Carolina Center for Educational Excellence</p>
+                <hr>
+                <p class="grey-text">9201 Seawell School Rd, Chapel Hill <br>*Nearby Smith Middle School</p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-calendar-alt fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">When is CHPMUNC?</h5>
+                <p class="grey-text">The Weekend of:</p>
+                <p class="grey-text">
+                  <strong>January 11-12</strong>
+                </p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="view overlay col-lg-6 col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.182409301687!2d-79.07869968473398!3d35.94250748013425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acdcce0801d4a9%3A0xc4556ce32b534b4a!2sCarolina%20Center%20for%20Educational%20Excellence!5e0!3m2!1sen!2sus!4v1577988543375!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section -->
+
+      <hr class="my-5">
+
+      <!--Section -->
+      <section class="mt-5 wow fadeIn">
+
+        <h2 class="my-5 h3 text-center">What are the Committees?</h2>
+
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+          <!--First column-->
+          <div class="col-md-4">
+            <h5 class="feature-title"><strong>DISEC</strong></h5>
+            <div style="height:15px"></div>
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">General Assembly
+                </p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Topic 1: Russian Border Conflict with Baltic States
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Topic 2: Conflict in Kashmir
+                </p>
+              </div>
+            </div>
+            <!--/Third row-->
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-md-4">
+            <h5 class="feature-title"><strong>UNEP</strong></h5>
+            <div style="height:15px"></div>
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">General Assembly
+                </p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Topic 1: Public Health
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Topic 2: Overpopulation & Resource Allocation
+                </p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Topic 3: Renewable Energy
+                </p>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4">
+            <h5 class="feature-title"><strong>Korean War</strong></h5>
+            <div style="height:15px"></div>
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Joint Crisis Committee
+                </p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">Evolves with your actions
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-angle-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="grey-text">You determine the best plans to win or end the war
+                </p>
+              </div>
+            </div>
+            <!--/Third row-->
+          </div>
+          <!--/Third column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Section -->
+
+      <hr class="mb-5">
+      
+      <!--Section -->
+      <section class="mt-5 wow fadeIn">
+        <h2 class="my-5 h3 text-center">How much is CHPMUNC?</h2>
+        <h5 class="feature-title"><strong>CHPMUNC will cost $18 for delegates at all schools</strong></h5>
+        <h6 class="grey-text">*including Candy Grams for $1</h6>
+        <!--First row-->
+        <div class="row features-small mt-5 wow fadeIn">
+          <!--Grid column-->
+          <div class="col-xl">
+            <h5 class="feature-title mb-1">Money from CHHS, CHS, ECHHS, and NCSSM:</h5>
+            <div style="height:15px"></div>
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-long-arrow-alt-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="features-small">pays for Food, Placards, and Other materials
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-long-arrow-alt-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="features-small">will subsidize future CHPMUNC conferences
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl">
+            <h5 class="feature-title mb-1">25% of the Profits go to:</h5>
+            <div style="height:15px"></div>
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-long-arrow-alt-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="features-small">Saint Jude Children's Hospital
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-long-arrow-alt-right fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <p class="features-small">African Aid Organization
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section -->
+
+      <hr class="mb-5">
+
+    </div>
+  </main>
+  <!--Main layout-->
+  <!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT --><!-- CONTENT -->
+
+  <% include ../partials/footer.ejs %>
+</body>
+</html>
